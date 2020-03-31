@@ -1,11 +1,39 @@
 /*
  *  Created by IntelliJ IDEA.
- *  User: Vaibhav
- *  Date: 23-Mar-20
- *  Time: 7:08 PM
+ *  User: Rakesh Yadav
+ *  Date: 28-Mar-20
+ *
  */
-package problem4.main;
-// executable class
-// use problem1.mybst.MyBinarySearchTree class for creating binary tree
-public class MyMain {
+package problem3.node;
+import problem5.student.Student;
+
+public class Node {
+
+    private Student student;
+    private Node next;
+
+    /*
+     Constructor
+     */
+    public Node(Student student) {
+        this.student = student;
+        next = null;
+    }
+
+    /*
+    Getter & Setter methods
+     */
+    public Student getData() {
+        return student;
+    }
+
+
+    public Node getNext() {
+        return next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
+
 }
